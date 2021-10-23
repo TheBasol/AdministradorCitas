@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Agendar Citas</title>
+</head>
+<body>
+    <h1 class="tittle">Administrador de Pacientes para una Veterinaria</h1>
+    <div class="container">
+        <h2 class="form_tittle">Datos del Paciente</h2>
+        <div class="cont_Formulario" id="cont_Formulario">
+            <form id="form">
+                <label>Nombre de la mascota: </label>
+                <input type="text" placeholder="Nombre" id="mascota" name="mascota">
+                <br>
+                <label>Propietario: </label>
+                <input type="text" placeholder="Dueño de la mascota" id="propietario" name="propietario">
+                <br>
+                <label>Telefono: </label>
+                <input type="text" placeholder="Telefono" id="telefono" name="telefono">
+                <br>
+                <label>Fecha: </label>
+                <input type="date" id="fecha" name="fecha">
+                <br>
+                <label>Hora: </label>
+                <input type="time" id="hora" name="hora" placeholder="Hora de la consulta">  
+                <br>
+                <label>Sintomas: </label>
+                <textarea id="sintomas" name="sintomas"></textarea>
+                <div class="centrarBtn">
+                    <button id="formulario" name="formulario">Crear Cita</button>
+                </div>
+                <div id="mensajeError">
+
+                </div>
+            </form>
+        </div>
+    </div>
+            
+
+
+                            
+    <div class="consultas" id="consultas">
+
+
+    </div>
+
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
